@@ -5,8 +5,9 @@ const ERROR_MESSAGES = {
   not_configured: "ADMIN_PASSWORD isn't set in your environment variables yet (see README.md).",
 };
 
-export default function AdminLoginPage({ searchParams }) {
-  const error = searchParams?.error ? ERROR_MESSAGES[searchParams.error] || "Something went wrong." : null;
+export default async function AdminLoginPage({ searchParams }) {
+  const params = await searchParams;
+  const error = params?.error ? ERROR_MESSAGES[params.error] || "Something went wrong." : null;
 
   return (
     <main className="admin-shell">
