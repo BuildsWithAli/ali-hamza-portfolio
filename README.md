@@ -159,3 +159,6 @@ src/
     auth.js / requireAdmin.js   Admin session cookie handling
 supabase/schema.sql        Run this once in the Supabase SQL editor
 ```
+
+---
+*Deployed with Next.js 15 on [Vercel](https://ali-portfolio-mocha-tau.vercel.app)*
